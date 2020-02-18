@@ -3,22 +3,22 @@ window.addEventListener('DOMContentLoaded', function(){
 
   // Modal
   function More(btn, btnClose){
-    let self = this;
-    self.btn = document.querySelector('.' + btn);
-    self.close = document.querySelector('.' + btnClose);
-    self.overlay = document.querySelector('.overlay');
+    // let self = this;
+    this.btn = document.querySelector('.' + btn);
+    this.close = document.querySelector('.' + btnClose);
+    this.overlay = document.querySelector('.overlay');
 
     // console.log(self.overlay);
 
-    self.btn.addEventListener('click', function(){
-      self.overlay.style.display = 'block';
-      this.classList.add('more-splash');
+    this.btn.addEventListener('click', () => {
+      this.overlay.style.display = 'block';
+      this.btn.classList.add('more-splash');
       document.body.style.overflow = 'hidden';
     });
 
-    self.close.addEventListener('click', function(){
-      self.overlay.style.display = 'none';
-      self.btn.classList.remove('more-splash');
+    this.close.addEventListener('click', () => {
+      this.overlay.style.display = 'none';
+      this.btn.classList.remove('more-splash');
       document.body.style.overflow = '';
     });
   }
