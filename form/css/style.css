@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Roboto Slab";
+}
+
+body {
+  background: url(../img/main_bg.jpg);
+  background-position: 50% 30%;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.content .contact {
+  width: 86%;
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #373737;
+  margin: 2em auto;
+
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
+}
+.content .contact-img {
+  width: 50%;
+}
+.content .contact-img img {
+  height: 500px;
+  -webkit-transform: translateY(-13%);
+      -ms-transform: translateY(-13%);
+          transform: translateY(-13%);
+}
+.content .contact-form {
+  width: 50%;
+  padding-left: 40px;
+}
+.content .contact-form-title {
+  margin-top: 30px;
+  color: #c78030;
+  font-size: 26px;
+  font-weight: 300;
+}
+.content .contact-form-title:after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 1px;
+  background-color: #c78030;
+  margin-top: 4px;
+}
+.content .contact-form form input {
+  display: block;
+  width: 60%;
+  height: 40px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding-left: 0.5em;
+}
+.content .contact-form form button {
+  margin-top: 60px;
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #c78030;
+  color: #c78030;
+  cursor: pointer;
+}
+.content .contact-form form button:hover {
+  box-shadow: 0 0 10px #c78030;
+}
+.status {
+  color: white;
+}
